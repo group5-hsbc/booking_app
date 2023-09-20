@@ -1,0 +1,28 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+
+# 4 space indentation
+[*.js]
+indent_style = space
+charset = utf-8
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 4 space indentation
+[*.jsx]
+indent_style = space
+charset = utf-8
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Ignore Prettier rules
+[*.js]
+exclude_patterns = .prettierrc, .prettierrc.js, .prettierrc.json, .prettierrc.yml, .prettierrc.yaml, .prettierrc.toml

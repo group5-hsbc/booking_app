@@ -1,0 +1,27 @@
+{
+  "name": "booking_app",
+  "version": "1.0.0",
+  "description": "A Reservation and Booking Application is a software program that enables users to place orders or reservations for specific services or products. This application is developed using the JavaScript programming language and leverages libraries and frameworks such as React.js, Node.js, and Express.js.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index",
+    "server": "nodemon server/index",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
