@@ -72,7 +72,7 @@ If you would like to contribute to this project, please follow these steps:
 1. Fork this repository.
 2. Create a new branch for the feature or fix you want to work on.
 3. Make the necessary changes.
-4. Create a pull request (PR) to this repository with a clear description of the changes you made.
+4. Create a pull request (PR) to the dev branch of this repository with a clear description of the changes you made.
 
 ## License
 
