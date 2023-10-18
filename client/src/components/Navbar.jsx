@@ -26,13 +26,16 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`h-[80px] bg-white md:h-max z-50 fixed w-full px-5 ${
+      className={`h-[80px] bg-white top-0 left-0 md:h-max z-50 fixed w-full px-5 ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-4">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="w-[50px]" />
+          <h1 className="text-2xl font-bold ml-2 text-[#262d63]">
+            The Continental
+          </h1>
         </Link>
         <button
           onClick={handleToogleNav}
@@ -93,7 +96,7 @@ const Navbar = () => {
               <Link
                 onClick={handleToogleNav}
                 to={"/register"}
-                className="px-5 bg-blue-400 py-1 rounded-md text-white text-center hover:opacity-95 text-sm font-normal transition-all"
+                className="px-4 bg-[#2e3b8c] py-1.5 rounded-md text-white text-center hover:opacity-95 text-sm font-normal transition-all"
               >
                 Register
               </Link>
