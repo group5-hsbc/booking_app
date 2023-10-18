@@ -67,12 +67,12 @@ Start server and client for development
 
 Contributions are always welcome!
 
-If you would like to contribute to this project, please follow these steps:
+Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
-1. Fork this repository.
-2. Create a new branch for the feature or fix you want to work on.
-3. Make the necessary changes.
-4. Create a pull request (PR) to this repository with a clear description of the changes you made.
+Fork repositori ini.
+Buat cabang (branch) baru untuk fitur atau perbaikan yang ingin Anda lakukan.
+Lakukan perubahan yang diperlukan.
+Buat pull request (PR) ke repositori ini dengan deskripsi yang jelas tentang perubahan yang Anda lakukan.
 
 ## License
 
