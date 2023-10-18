@@ -26,7 +26,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`h-[80px] md:h-max z-50 fixed w-full px-5 ${
+      className={`h-[80px] bg-white md:h-max z-50 fixed w-full px-5 ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
