@@ -60,7 +60,7 @@ const Navbar = () => {
                 className="relative inline-block group"
               >
                 Home
-                <span class="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
+                <span className="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
               </Link>
             </li>
             <li>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 className="relative inline-block group"
               >
                 Hotel
-                <span class="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
+                <span className="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
               </Link>
             </li>
             <li>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className="relative inline-block group"
               >
                 Room type
-                <span class="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
+                <span className="absolute inset-x-1/2 -bottom-2 w-0 h-[2px] bg-gray-700 origin-center group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
               </Link>
             </li>
             <li className="md:pl-10">
