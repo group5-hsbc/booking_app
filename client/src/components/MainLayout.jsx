@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <>
       <Navbar />
-      <main className="bg-white">
+      <main className="bg-white py-[80px]">
         <Outlet />
       </main>
       <Footer />
