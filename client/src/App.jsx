@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { MainLayout } from "./components";
-import { Home, Hotel } from "./pages";
+import { Home} from "./pages";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Checkout from './pages/Checkout';
+import Tentang from './pages/Tentang';
 
 const App = () => {
   return (
@@ -10,9 +12,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          <Route path="/hotel" element={<Hotel />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/tentang" element={<Tentang />} />
         </Route>
       </Routes>
     </Router>
