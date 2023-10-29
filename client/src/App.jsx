@@ -1,10 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { MainLayout } from "./components";
-import { Home} from "./pages";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Checkout from './pages/Checkout';
-import Tentang from './pages/Tentang';
+import { Checkout, Home, Login, Register, Tentang } from "./pages";
 
 const App = () => {
   return (
