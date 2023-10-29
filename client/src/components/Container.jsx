@@ -1,13 +1,9 @@
 import React from "react";
 
-const Container = ({
-  className = "max-w-[1200px] mx-auto",
-  style = {},
-  children,
-}) => {
+const Container = ({ className, style = {}, children }) => {
   return (
     <section className="w-full h-max">
-      <div className={className} style={style}>
+      <div className={`max-w-[1200px] mx-auto ${className}`} style={style}>
         {children}
       </div>
     </section>
