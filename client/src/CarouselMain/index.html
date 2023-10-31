@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- <script src="script.js" defer></script> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<style>
+    .carousel .card {
+        display: inline-block;
+        margin: 0 10px;
+        width: calc(100% / 3 - 20px);
+        /* Adjust the width as needed */
+        border: 1px solid #ccc;
+        /* Border for the card */
+        /* border-radius: 10px; */
+        /* Border radius for the card */
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* Hide overflowing content */
+    }
+    
+    .card-img {
+        width: 100%;
+        /* Make the image fill the card horizontally */
+        height: 100%;
+        /* Make the image fill the card vertically */
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the card */
+    }
+    
+    .carousel2 .card {
+        display: inline-block;
+        margin: 0 10px;
+        width: calc(100% / 3 - 20px);
+        /* Adjust the width as needed */
+        border: 1px solid #ccc;
+        /* Border for the card */
+        /* border-radius: 10px; */
+        /* Border radius for the card */
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* Hide overflowing content */
+    }
+    
+    .card-img {
+        width: 100%;
+        /* Make the image fill the card horizontally */
+        height: 100%;
+        /* Make the image fill the card vertically */
+        object-fit: cover;
+        /* Maintain aspect ratio and cover the card */
+    }
+</style>
+
+<body>
+    <style>
+        .wrapper .carousel {
+            font-size: 0px;
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+        
+        .wrapper2 .carousel2 {
+            font-size: 0px;
+            cursor: pointer;
+            overflow: hidden;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+        }
+    </style>
+    <br>
+    <br>
+    <h2>Hotel Lenora</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left" style="z-index: 9999;"></i>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="Hotel Indonesia.jpg" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Lenora Hotel</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa fa-star text-warning"></span> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 320.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa-stack fa-lg float-right">
+                                    <i class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                    <i class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                </span></div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/Deluxe room 2.jpg" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Standar Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa fa-star text-warning"></span> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 1.000.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa-stack fa-lg float-right">
+                                    <i class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                    <i class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                </span></div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/Grand Deluxe room2.jpg" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Deluxe Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa fa-star text-warning"></span> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 2.000.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa-stack fa-lg float-right">
+                                    <i class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                    <i class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                </span></div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/Presidential Room 5.jpeg" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Presidential Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa fa-star text-warning"></span> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 320.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <span class="fa-stack fa-lg float-right">
+                                    <i class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                    <i class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></i>
+                                </span></div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <i id="right" class="fa-solid fa-angle-right" style="z-index: 9999;"></i>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2>Hotel Malaka</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper2">
+                <span id="left" class="fa-solid fa-angle-left" style="z-index: 9999;"></span>
+                <div class="carousel2">
+                    <div class="card">
+                        <img src="Hotel Indonesia/malaka1.png" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Malaka Hotel</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa fa-star text-warning"></spen> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 320.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa-stack fa-lg float-right">
+                                            <span class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                            <span class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                        </spen>
+                                    </div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/malaka2.png" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Standar Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa fa-star text-warning"></spen> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 1.00.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa-stack fa-lg float-right">
+                                            <span class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                            <span class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                        </spen>
+                                    </div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/malaka3.png" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Deluxe Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa fa-star text-warning"></spen> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 2.000.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa-stack fa-lg float-right">
+                                            <span class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                            <span class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                        </spen>
+                                    </div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Hotel Indonesia/malaka4.png" style="width: 100%;height:200px;object-fit: cover;" alt="img" draggable="false" class="card-img-top" />
+                        <div class="card-body" style="z-index: 9999;">
+                            <h5 class="card-title" style="color: black;"><b>Presidential Room</b> </h5>
+                            <h6>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa fa-star text-warning"></spen> 4.9
+                                        <br>
+                                        <b class="text-danger">Rp. 3.000.000</b>
+                                    </div>
+                                    <div class="col-md-6 col-12 my-auto">
+                                        <spen class="fa-stack fa-lg float-right">
+                                            <span class="fas fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                            <span class="far fa-heart fa-stack-3x text-danger" style="font-size: 20pt;padding-right:35px"></span>
+                                        </spen>
+                                    </div>
+                                </div>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <span id="right" class="fa-solid fa-angle-right" style="z-index: 9999;"></span>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top:20px"></div>
+</body>
+<script>
+    const carousel = document.querySelector(".carousel");
+    firstImg = carousel.querySelectorAll("img")[0];
+    arrowIcons = document.querySelectorAll(".wrapper i");
+    let isDragStart = false,
+        isDragging = false,
+        prevPageX,
+        prevScrollLeft,
+        positionDiff;
+    const showHideIcons = () => {
+        let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+        arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+        arrowIcons[1].style.display =
+            carousel.scrollLeft == scrollWidth ? "none" : "block";
+    };
+    arrowIcons.forEach((icon) => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth = firstImg.clientWidth + 14;
+            carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+            setTimeout(() => showHideIcons(), 60);
+        });
+    });
+    const autoSlide = () => {
+        positionDiff = Math.abs(positionDiff);
+        let firstImgWidth = firstImg.clientWidth + 14;
+        let valDifference = firstImgWidth - positionDiff;
+        if (carousel.scrollLeft > prevScrollLeft) {
+            return (carousel.scrollLeft +=
+                positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
+        }
+        carousel.scrollLeft -=
+            positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    };
+    const dragStart = (e) => {
+        isDragStart = true;
+        prevPageX = e.pageX || e.touches[0].pageX;
+        prevScrollLeft = carousel.scrollLeft;
+    };
+    const dragging = (e) => {
+        if (!isDragStart) return;
+        e.preventDefault();
+        isDragging = true;
+        carousel.classList.add("dragging");
+        positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+        carousel.scrollLeft = prevScrollLeft - positionDiff;
+        showHideIcons;
+    };
+    const dragStop = () => {
+        isDragStart = false;
+        carousel.classList.remove("dragging");
+        if (!isDragging) return;
+        isDragging = false;
+        autoSlide();
+    };
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
+    carousel.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
+    carousel.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("mouseleave", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+
+    // 
+
+    const carousel_2 = document.querySelector(".carousel2");
+    const firstImg_2 = carousel_2.querySelectorAll("img")[0];
+    const arrowIcons_2 = document.querySelectorAll(".wrapper2 span");
+    let isDragStart_2 = false,
+        isDragging_2 = false,
+        prevPageX_2,
+        prevScrollLeft_2,
+        positionDiff_2;
+
+    const showHideIcons_2 = () => {
+        let scrollWidth_2 = carousel_2.scrollWidth - carousel_2.clientWidth;
+        arrowIcons_2[0].style.display = carousel_2.scrollLeft == 0 ? "none" : "block";
+        arrowIcons_2[1].style.display =
+            carousel_2.scrollLeft == scrollWidth_2 ? "none" : "block";
+    };
+
+    arrowIcons_2.forEach((icon) => {
+        icon.addEventListener("click", () => {
+            let firstImgWidth_2 = firstImg_2.clientWidth + 14;
+            carousel_2.scrollLeft += icon.id == "left" ? -firstImgWidth_2 : firstImgWidth_2;
+            setTimeout(() => showHideIcons_2(), 60);
+        });
+    });
+
+    const autoSlide_2 = () => {
+        positionDiff_2 = Math.abs(positionDiff_2);
+        let firstImgWidth_2 = firstImg_2.clientWidth + 14;
+        let valDifference_2 = firstImgWidth_2 - positionDiff_2;
+        if (carousel_2.scrollLeft > prevScrollLeft_2) {
+            return (carousel_2.scrollLeft +=
+                positionDiff_2 > firstImgWidth_2 / 3 ? valDifference_2 : -positionDiff_2);
+        }
+        carousel_2.scrollLeft -=
+            positionDiff_2 > firstImgWidth_2 / 3 ? valDifference_2 : -positionDiff_2;
+    };
+
+    const dragStart_2 = (e) => {
+        isDragStart_2 = true;
+        prevPageX_2 = e.pageX || e.touches[0].pageX;
+        prevScrollLeft_2 = carousel_2.scrollLeft;
+    };
+
+    const dragging_2 = (e) => {
+        if (!isDragStart_2) return;
+        e.preventDefault();
+        isDragging_2 = true;
+        carousel_2.classList.add("dragging");
+        positionDiff_2 = (e.pageX || e.touches[0].pageX) - prevPageX_2;
+        carousel_2.scrollLeft = prevScrollLeft_2 - positionDiff_2;
+        showHideIcons_2;
+    };
+
+    const dragStop_2 = () => {
+        isDragStart_2 = false;
+        carousel_2.classList.remove("dragging");
+        if (!isDragging_2) return;
+        isDragging_2 = false;
+        autoSlide_2();
+    };
+
+    carousel_2.addEventListener("mousedown", dragStart_2);
+    carousel_2.addEventListener("touchstart", dragStart_2);
+    carousel_2.addEventListener("mousemove", dragging_2);
+    carousel_2.addEventListener("touchmove", dragging_2);
+    carousel_2.addEventListener("mouseup", dragStop_2);
+    carousel_2.addEventListener("mouseleave", dragStop_2);
+    carousel_2.addEventListener("touchend", dragStop_2);
+</script>
+
+</html>
