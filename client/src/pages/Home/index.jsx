@@ -1,25 +1,57 @@
-import test from "../../assets/images/banner-home-1.svg";
-import { Container } from "@components";
+import { Container, CardHotel, CardPromo } from "@components";
+import HeaderBanner from "./components/HeaderBanner";
 const Home = () => {
   return (
-    <Container
-      style={{
-        backgroundImage: `url(${test})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-      }}
-      className="h-[800px] flex w-full flex-col justify-center items-center gap-8"
-    >
-      <h1 className="text-[3rem] lg:text-[4.5rem] font-bold text-white text-center max-w-[1200px] shadow-sm">
-        Welcome To The Continental Hotel
-      </h1>
-      <div>
-        <button className="px-5 py-2 rounded-full bg-[#148EFF] text-white font-medium shadow-md tracking-wide">
-          Order Here
-        </button>
-      </div>
-    </Container>
+    <>
+      <HeaderBanner />
+      <Container>
+        <div className="w-full flex flex-col mt-20">
+          <div className="w-full flex justify-center">
+            <h1 className="text-xl font-semibold">Promo</h1>
+          </div>
+          <div className="w-full flex gap-10 overflow-x-scroll py-10">
+            {Array.from({ length: 3 }, (_, index) => {
+              return (
+                <div key={index}>
+                  <CardPromo />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="w-full flex flex-col mt-20">
+          <div className="w-full flex justify-center">
+            <h1 className="text-xl font-semibold">Hotel Lenora</h1>
+          </div>
+          <div className="w-full flex gap-10 overflow-x-scroll py-10">
+            {Array.from({ length: 10 }, (_, index) => {
+              return <CardHotel />;
+            })}
+          </div>
+        </div>
+        <div className="w-full flex flex-col mt-20">
+          <div className="w-full flex justify-center">
+            <h1 className="text-xl font-semibold">Hotel Malaka</h1>
+          </div>
+          <div className="w-full flex gap-10 overflow-x-scroll py-10">
+            {Array.from({ length: 10 }, (_, index) => {
+              return <CardHotel />;
+            })}
+          </div>
+        </div>
+        <div className="w-full flex flex-col mt-20">
+          <div className="w-full flex justify-center">
+            <h1 className="text-xl font-semibold">Hotel Iblis</h1>
+          </div>
+          <div className="w-full flex gap-10 overflow-x-scroll py-10">
+            {Array.from({ length: 10 }, (_, index) => {
+              return <CardHotel />;
+            })}
+          </div>
+        </div>
+      </Container>
+    </>
   );
 };
 
