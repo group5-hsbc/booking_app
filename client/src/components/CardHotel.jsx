@@ -2,11 +2,13 @@ import React from "react";
 import MLK4 from "@assets/images/malaka4.png";
 import { IoStarSharp } from "react-icons/io5";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+const CardHotel = () => {
+  const navigate = useNavigate();
 
-const CardHotel = ({ data }) => {
   return (
     <div className="rounded-md w-[320px] h-[400px] shadow-md">
-      <div className="w-full h-[250px]">
+      <div className="w-full h-[250px]" onClick={() => navigate(`/tentang/1`)}>
         <img
           src={MLK4}
           alt="hotel-image"
